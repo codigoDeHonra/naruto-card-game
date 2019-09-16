@@ -4,38 +4,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
-    <div id="app">
-      <table>
-        <tr>
-          <td>
-            {{player1.nome}}
-          </td>
-          <td>
-            {{player1.vida}}
-          </td>
-        </tr>
-        <tr>
-          <td v-for="carta in player1.cartas">
-            {{carta}}
-          </td>
-        </tr>
-      </table>
-      <table>
-        <tr>
-          <td>
-            {{player2.nome}}
-          </td>
-          <td>
-            {{player2.vida}}
-          </td>
-        </tr>
-        <tr>
-          <td v-for="carta in player2.cartas">
-            {{carta}}
-          </td>
-        </tr>
-      </table>
-    </div>
     <script>
       app = new Vue({
         el: '#app',
